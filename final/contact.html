@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Edelweiss Lodge</title>
+        <meta name="author" content="Tala Alyousef">
+        <meta name="description" content="Home page for Edelweiss Lodge, a resort where you can experience the magic of the Swiss Alps.">
+        <link rel="icon" type="image/x-icon" href="images/edelweiss.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles.css">        
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1>
+                    <a href="index.html">Edelweiss Lodge</a>
+                </h1>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="#">Accommodations</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+            <img src="images/swiss-valley.jpg" alt="Swiss valley with a bright blue and cloudy sky, feauturing a valley of snowy mountains and green mountains covered with trees." width="1440" height="560">
+        </header>
+        <main>
+            <div id="contact">
+                <div>
+                    <h2>Contact Us</h2>
+                    <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us!<br><i>Required fields marked with a *</i></p>
+                    <img src="images/swiss-peak.jpg" alt="Large white mountain peak upon tall green trees in front of a bright blue sky." width="350" height="455">
+                </div>
+                <div id="form">
+                    <form action="https://wp.zybooks.com/form-viewer.php" method="post">
+                        <label for="name">Full name: <span class="required">*</span></label><br>
+                        <input type="text" id="name" name="name" required><br>
+                        <label for="email">Email: <span class="required">*</span></label><br>
+                        <input type="email" id="email" name="email" required><br>
+                        <label for="phone">Phone Number: <span class="required">*</span></label><br>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br>
+                        <fieldset>
+                            <legend>Preferred Method of Communication: <span class="required">*</span></legend>
+                            <input type="radio" id="comm-email" name="preferred-comm" value="email" required>
+                            <label id="f-input" for="comm-email">Email</label>
+                            <input type="radio" id="comm-phone" name="preferred-comm" value="phone">
+                            <label for="comm-phone">Phone</label>
+                        </fieldset>
+                        <label for="comments">Comments: <span class="required">*</span></label><br>
+                        <textarea id="comments" name="comments" required></textarea><br>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Copyright ©2023 - Edelweiss Lodge</p>
+            <p>This site is for educational purposes only</p>
+        </footer>
+
+    </body>
+</html>

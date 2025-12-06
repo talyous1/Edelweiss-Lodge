@@ -1,0 +1,195 @@
+:root {
+    --dk-blue: #356697;
+    --lt-blue: #ADDEFF;
+    --dk-green: #2A3C24;
+    --lt-green: #7A9B76;
+    --white: #F0F3F5;
+    --heading-font: 'Playwrite NO', 'Lucida Handwriting', 'Georgia', sans-serif;
+    --body-font: 'Old Standard TT', 'Georgia', 'Times New Roman', sans-serif;
+
+    background-color: var(--dk-green);
+    font-family: var(--body-font);
+    font-size: 1.1rem;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header, main, footer {
+    width: 1280px;
+    max-width: 100%;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+header div h1 {
+    padding-left: 100px;
+}
+
+header div h1 a {
+    color: var(--white);
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+}
+
+h2 {
+    color: var(--dk-blue);
+}
+
+h3 {
+    color: var(--dk-green);
+}
+
+header div nav a {
+    padding-right: 100px;
+    color: var(--white);
+    font-size: 1.3rem;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: var(--lt-green);
+}
+
+header div nav a {
+    padding-right: 100px;
+    color: var(--white);
+}
+
+header div nav a:hover {
+    color: var(--lt-blue);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--lt-green);
+}
+
+header img {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+main {
+    background-color: var(--white);
+    padding-top: 70px;
+    background-image: url(images/diamond-upholstery.png);
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+main > p {
+    margin: 25px 250px 60px 250px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+#options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: auto;
+    width: 1000px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+footer {
+    text-align: center;
+    margin: 60px 0 30px 120px;
+    color: var(--white);
+    width: 1000px;
+}
+
+#contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    width: 1000px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+#contact p {
+    width: 350px;
+    padding-left: 70px;
+}
+
+#form {
+    padding-top: 90px;
+    font-weight: bold;
+}
+
+#form span {
+    color:crimson;
+}
+
+form > input, textarea {
+   display: flex;
+   justify-content: space-between;
+   height: 55px;
+   width: 350px;
+   border: 1px solid var(--white);
+   border-radius: 8px;
+}
+
+fieldset {
+    background-color: white;
+    width: 323px;
+    border: 1px solid var(--white);
+    border-radius: 8px;
+}
+
+#f-input {
+    padding-right: 100px;
+}
+
+fieldset label {
+    font-weight: 100;
+}
+
+input:focus,
+textarea:focus,
+fieldset:focus-within {
+    border: 3px solid var(--lt-green);
+}
+
+fieldset {
+    margin-bottom: 17px;
+}
+
+input[type="submit"] {
+    background-color: var(--dk-green);
+    color: white;
+    font-family: var(--body-font);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--lt-green);
+    color: white;
+    box-shadow: 5px 5px 1px var(--lt-green) ;
+}
